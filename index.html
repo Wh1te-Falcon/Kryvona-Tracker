@@ -63,7 +63,14 @@ th,td{padding:8px 6px;text-align:center;border-top:1px solid var(--ln);font-size
 <div id="auth"><div class="card"><h2>Sign in</h2><label class="rl">Email</label><input id="em" type="email" autocomplete="username"><label class="rl" style="margin-top:10px">Password</label><input id="pw" type="password" autocomplete="current-password"><button class="btn" id="si">Sign in</button><div class="note" id="ae"></div><a id="rs">Forgot password?</a></div></div>
 <script>
 /* BACKEND: paste your Firebase web config here to enable secure per-person logins. Leave null for demo mode. */
-var CFG=null;
+var CFG={
+ apiKey:"AIzaSyBZPvOOYYQvn7VDUV0fYTUZ0v_2WJaJW8A",
+  authDomain:"kryvona-tracker.firebaseapp.com",
+  projectId: "kryvona-tracker",
+  storageBucket:"kryvona-tracker.firebasestorage.app",
+  messagingSenderId: "690012907233",
+  appId:"1:690012907233:web:75b9f66fd0b2b87069f9a0"
+};
 var MEMBERS=[{n:'Jaideep',hod:1},{n:'Punit'},{n:'Vibhanshu'}];
 var DAYS=['Mon','Tue','Wed','Thu','Fri'];
 var MT=[
